@@ -75,20 +75,20 @@ class Passwords:
         password_found = Password.find_by_account(account_name)
         pyperclip.copy(password_found.account_password)
 
-    @classmethod
-    def password_gen ():
-    from random import *
-    characters = string.ascii_letters+string.punctuation+string.digits
-    password = "".join(choice(characters) for x in range(randint(8,16)))
-    print(password)
-
-
     # @classmethod
-    # def password_gen(cls, password_length):
-    #     string = "abcdefghigjkmnopqrstuvwxyz1234567890-_=+{}\|"';>./,`!@#$^&*()`'
-    #     password = "".join(random.sample(string, int(password_length)))
-    #     account_passsword = password
-    #     return account_passsword
+    # def password_gen ():
+    # from random import *
+    # characters = string.ascii_letters+string.punctuation+string.digits
+    # password = "".join(choice(characters) for x in range(randint(8,16)))
+    # print(password)
+
+
+    @classmethod
+    def password_gen(cls, password_length):
+        string = "abcdefghigjkmnopqrstuvwxyz1234567890-_=+{}\|"';>./,`!@#$^&*()`'
+        password = "".join(random.sample(string, int(password_length)))
+        account_passsword = password
+        return account_passsword
 
 
 
