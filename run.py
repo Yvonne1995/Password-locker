@@ -1,5 +1,5 @@
 #!/usr/bin/env python 3.6
-from user import user
+from user import User
 from passw import Passwords
 import random
 
@@ -7,7 +7,7 @@ def create_user(fname, lname, password):
     """
     Function to create a new user_list
     """
-    new_user =Passwords(fname,lname,password)
+    new_user =User(fname, lname, password)
     return new_user
 
 def save_users(user):
