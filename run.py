@@ -68,11 +68,11 @@ def find_profile(account_name):
     """
     return Passwords.find_by_account(account_name)
 
-def check_existing_profile(account_name):
+def profile_exists(account_name):
     """
     Function that check if a profile exists with that account_name and return a Boolean
     """
-    return Passwords.check_existing_profile(account_name)
+    return Passwords.profile_exists(account_name)
 
 def display_profiles():
     """

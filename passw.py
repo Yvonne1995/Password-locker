@@ -72,7 +72,7 @@ class Passwords:
 
     @classmethod
     def copy_password(cls, account_name):
-        password_found = Password.find_by_account(account_name)
+        password_found = Passwords.find_by_account(account_name)
         pyperclip.copy(password_found.account_password)
 
     # @classmethod
