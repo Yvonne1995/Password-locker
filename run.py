@@ -1,5 +1,5 @@
 #!/usr/bin/env python 3.6
-from user import User
+from user import user
 from passw import Passwords
 import random
 
@@ -98,9 +98,9 @@ def main():
     print("")
 
     print(f"Hi {user_name}. What would you like to do?")
-    print(")
+    print("")
 
-    while True
+    while True:
         print("""Use these short codes:
                cn - create new account
                li - log in to your password profiles
@@ -108,7 +108,7 @@ def main():
                ex - exit profile list. """)
         short_code = input().lower()
         print("_" * 100)
-        if short_code == "cn"
+        if short_code == "cn":
             print("New Passwrd Locker Account")
             print("_" * 20)
 
