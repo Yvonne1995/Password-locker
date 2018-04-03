@@ -26,7 +26,7 @@ class TestPasswords(unittest.TestCase):
         """
         Passwords.password_list = []
 
-    def test_instance(self):
+    def test_init(self):
         """
         test_init test case to test if the object is initialized properly
         """
