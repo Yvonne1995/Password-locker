@@ -151,7 +151,7 @@ def main():
             print("_" * 100)
             if short_code == "np":
                 print(
-                    "What account do you want to save a password for? Eg Gmail, Facebook, Equity")
+                    "What account do you want to save a password for?)
                 account_name = input()
                 print("""
                       We can generate a password for you. Use:
